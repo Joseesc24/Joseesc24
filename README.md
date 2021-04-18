@@ -36,3 +36,6 @@ Roughly the functions of the main modules are:
 -   Super resolution module: This module receives low quality images from the web interface  and transform them in high quality ones, this module is deployed over Sage Maker.
 
 -   Mail sending module: This module is basically a lambda function that capture the processed images and then send it to the final user via email.
+
+<br>
+

@@ -6,17 +6,17 @@ import glob
 import cv2
 
 
-model_path = 'RRDB_ESRGAN_x4.pth'
-device = torch.device('cpu')
+model_path = "RRDB_ESRGAN_x4.pth"
+device = torch.device("cpu")
 
-test_img_folder = 'low_resolution_images/*'
+test_img_folder = "low_resolution_images/*"
 
 model = arch.RRDBNet(3, 3, 64, 23, gc=32)
 model.load_state_dict(torch.load(model_path), strict=True)
 model.eval()
 model = model.to(device)
 
-print('Model path {:s}. \nTesting...'.format(model_path))
+print("Model path {:s}. \nTesting...".format(model_path))
 
 idx = 0
 for path in glob.glob(test_img_folder):
@@ -34,4 +34,4 @@ for path in glob.glob(test_img_folder):
         output = model(img_LR).data.squeeze().float().cpu().clamp_(0, 1).numpy()
     output = np.transpose(output[[2, 1, 0], :, :], (1, 2, 0))
     output = (output * 255.0).round()
-    cv2.imwrite('high_resolution_images/{:s}_rlt.png'.format(base), output)
+    cv2.imwrite("high_resolution_images/{:s}_rlt.png".format(base), output)

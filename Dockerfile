@@ -1,6 +1,6 @@
 FROM python:3.7.10
 
-ARG USERNAME=esrgan_implementation_dev
+ARG USERNAME=development
 RUN useradd -ms /bin/bash $USERNAME
 USER $USERNAME
 

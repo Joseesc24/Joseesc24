@@ -13,6 +13,7 @@ packaging==20.9
 pathspec==0.8.1
 Pillow==8.2.0
 pip-upgrader==1.4.15
+pipdeptree==2.0.0
 pyparsing==2.4.7
 regex==2021.4.4
 requests==2.25.1

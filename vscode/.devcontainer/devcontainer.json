@@ -1,0 +1,13 @@
+{
+  "name": "Existing Dockerfile",
+  "context": "..",
+  "dockerFile": "../development.Dockerfile",
+  "forwardPorts": [],
+  "extensions": [
+    "esbenp.prettier-vscode",
+    "ms-python.python",
+    "ms-python.vscode-pylance",
+    "ms-toolsai.jupyter",
+    "oderwat.indent-rainbow"
+  ]
+}

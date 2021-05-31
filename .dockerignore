@@ -1,0 +1,13 @@
+requirements/readme.md
+requirements/all.txt
+
+*.code-workspace
+*.dockerignore
+*.devcontainer
+*.Dockerfile
+*.gitignore
+*.vscode
+*.git
+*.md
+
+vscode

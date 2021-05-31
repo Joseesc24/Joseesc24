@@ -1,3 +1,15 @@
+# python cache folder.
 __pycache__
-*.vscode
+
+# vscode workspace file.
+*.code-workspace
+
+# vscode devcontainer and general setups.
 *.devcontainer
+*.vscode
+
+# files ignore list.
+*.png
+
+# specific exceptions of vscode development files.
+!vscode/*

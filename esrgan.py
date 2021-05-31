@@ -6,7 +6,7 @@ import glob
 import cv2
 
 
-model_path = "RRDB_ESRGAN_x4.pth"
+model_path = "models/RRDB_ESRGAN_x4.pth"
 device = torch.device("cpu")
 
 test_img_folder = "low_resolution_images/*"

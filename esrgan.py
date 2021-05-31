@@ -1,4 +1,4 @@
-import RRDBNet_arch as arch
+import rrdbnet_arch as arch
 import os.path as osp
 import numpy as np
 import torch
